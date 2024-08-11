@@ -1,0 +1,328 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+        border: 2px solid rgba(255, 255, 255, 0.18);
+        border-bottom: none;
+        z-index: 1;
+    }
+    
+    header ul {
+        position: relative;
+        display: flex;
+        list-style-type: none;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        padding-right: 10px;
+        top: -20px;
+        float: right;
+        overflow: hidden;
+        filter: drop-shadow(100px);
+    }
+    
+    header ul li a {
+        text-decoration: none;
+        display: block;
+        padding-right: 20px;
+        color: rgb(255, 255, 255);
+    }
+    
+    header ul li a:hover {
+        color: aqua;
+        text-decoration: underline;
+    }
+    
+    header ul li a#LO {
+        color: #000fe4;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px #000;
+    }
+    
+    nav {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background-image: url(./image/backgre.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    
+    nav div {
+        font-size: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        padding-top: 150px;
+        padding-left: 20%;
+    }
+    
+    nav div:last-of-type span {
+        letter-spacing: 10px;
+        animation: sli 8s infinite;
+    }
+    
+    @keyframes sli {
+        0% {
+            opacity: 0;
+            color: rgb(255, 255, 255);
+        }
+        25% {
+            opacity: 0.5;
+            color: rgb(0, 255, 34);
+        }
+        50% {
+            opacity: 1;
+            color: green;
+        }
+        75% {
+            opacity: 0.5;
+            color: rgb(0, 255, 34);
+        }
+        100% {
+            opacity: 0;
+            color: #fff;
+        }
+    }
+    
+    section {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    
+    section img {
+        max-width: 100%;
+        max-height: 300px;
+        padding: 2px;
+        border-radius: 0 10px;
+    }
+    
+    .container {
+        position: relative;
+        width: 100%;
+    }
+    
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: transparent;
+        border-radius: 30px 30px 0 0;
+        backdrop-filter: blur(20px);
+        overflow: hidden;
+        height: 0;
+        transition: .5s ease;
+        cursor: pointer;
+    }
+    
+    .container:hover .overlay {
+        height: 100px;
+    }
+    
+    .text {
+        white-space: nowrap;
+        color: #fff;
+        position: absolute;
+        overflow: hidden;
+        font-size: 17px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+    
+    article {
+        width: 100%;
+        height: auto;
+        /* background-image: linear-gradient(to top, #93ebf5, #c9ecc9, #7bf7f7); */
+        margin-top: 40px;
+    }
+    
+    .DivVille {
+        width: 98.5%;
+        height: 400px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 50px rgb(0, 194, 253);
+        border: 1px solid #fff;
+        border-bottom: none;
+        border-radius: 10px;
+    }
+    
+    #Ville {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .ServiceVille {
+        width: 65%;
+        height: 300px;
+        /* border: 1px groove red; */
+        background-color: #0d0055;
+        /* margin-top: 100px; */
+    }
+    
+    .HistorieVille {
+        width: 30%;
+        height: 300px;
+        /* border: 1px groove red; */
+        background-color: #00fa19;
+    }
+    
+    article h1 {
+        width: 120px;
+        height: 60px;
+        color: black;
+        background-color: transparent;
+        border-radius: 30px 30px 0 0;
+        backdrop-filter: blur(180px);
+        overflow: hidden;
+        padding: 15px;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 300px;
+        background-color: #000;
+        margin-top: 40px;
+    }
+    
+    div#Contact {
+        width: 250px;
+        height: 250px;
+        margin-top: 40px;
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        padding: 100px 0px 0px 50px;
+        color: #fff;
+        letter-spacing: 2px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgb(0, 174, 255);
+    }
+    
+    a:hover {
+        color: gray;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    div#historie {
+        width: 250px;
+        height: 250px;
+        margin-top: 40px;
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        padding: 100px 0px 0px 50px;
+        color: #fff;
+        letter-spacing: 2px;
+    }
+    
+    div#Searchin {
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+        margin-top: 13em;
+        margin-left: 10px;
+        color: rgb(0, 174, 255);
+    }
+    
+    div.Losig {
+        display: flex;
+        width: 500px;
+        height: 300px;
+        /* margin-left: 27em; */
+        background-color: rgb(255, 0, 106);
+        border-radius: 30px;
+    }
+    
+    div#Login {
+        width: 248px;
+        height: 300px;
+        border: 1px solid #000;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: rgb(0, 174, 255);
+        border-radius: 30px;
+        padding: 30px;
+    }
+    
+    #Login h3 {
+        font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border: 1px solid #fff;
+        margin-top: 0.5em;
+        margin-bottom: 1.4em;
+        border-radius: 50%;
+        text-align: center;
+    }
+    
+    div#Signup {
+        width: 248px;
+        height: 300px;
+        border: 1px solid #000;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 30px;
+    }
+    
+    #Signup h3 {
+        font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-top: 0.5em;
+        color: rgb(0, 174, 255);
+        border: 1px solid rgb(0, 174, 255);
+        border-radius: 50%;
+        text-align: center;
+    }
+    
+    #Login a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    #Login h4 {
+        font-size: 16px;
+    }
+    /* footer #Contact a {
+    text-decoration: none;
+    color: #3866c9;
+}
+
+footer #Contact a:hover {
+    color: gray;
+} */
+    /* 
+footer #Contact li {
+    list-style-type: none;
+}
+
+#Login {
+    width: 200px;
+    height: 100px;
+    float: right;
+    background-color: brown;
+} */
