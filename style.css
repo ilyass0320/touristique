@@ -175,13 +175,52 @@
         /* border: 1px groove red; */
         background-color: #0d0055;
         /* margin-top: 100px; */
+        overflow-x: scroll;
     }
     
     .HistorieVille {
         width: 30%;
         height: 300px;
         /* border: 1px groove red; */
-        background-color: #00fa19;
+        background-color: #fff;
+        overflow-y: scroll;
+        border: 1px groove blue;
+        border-top: transparent;
+        cursor: pointer;
+    }
+    
+    .HistorieVille h2 {
+        width: 135px;
+        height: 40px;
+        border: 1px solid #fff;
+        background-color: lightskyblue;
+        color: #000;
+        border-radius: 0 0 20px 20px;
+        padding: 5px;
+        text-align: center;
+        margin-left: 30%;
+    }
+    
+    .HistorieVille img {
+        width: 100%;
+    }
+    
+    .HistorieVille h4 {
+        text-align: center;
+        text-decoration: underline;
+        text-overflow: clip;
+        margin-bottom: 10px;
+    }
+    
+    .HistorieVille p {
+        width: 100%;
+        height: auto;
+        margin-left: 20px;
+        padding: 10px;
+        text-align: left;
+        text-align-last: left;
+        text-indent: 10%;
+        white-space: normal;
     }
     
     article h1 {
